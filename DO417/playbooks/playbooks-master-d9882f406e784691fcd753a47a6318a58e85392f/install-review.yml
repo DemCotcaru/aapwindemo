@@ -15,8 +15,8 @@
         name: W3Svc
         state: started
 
-- name: The default web page is created on win1
-  hosts: win1.example.com
+- name: The default web page is created on Win2016demo
+  hosts: Win2016demo
   tasks:
       # Change the content of the file
     - name: Index file is created
@@ -24,8 +24,8 @@
         content: "Hello World!"
         dest: C:\Inetpub\wwwroot\index.html
 
-- name: The default web page is created on win2
-  hosts: win2.example.com
+- name: The default web page is created on Win10demo
+  hosts: Win10demo
   tasks:
       # Change the content of the file
     - name: Index file is created
