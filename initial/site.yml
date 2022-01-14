@@ -1,0 +1,9 @@
+---
+- name: Example playbook
+  hosts: Windows
+  tasks:
+    - name: Time service is enabled and running
+      win_service:
+        name: W32Time
+        start_mode: auto
+        state: running
