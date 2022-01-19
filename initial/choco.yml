@@ -4,12 +4,12 @@
   tasks:
 #   INSTALL CHOCO
     - name: install_chocolatey
-      win_chocolatey:
+      chocolatey.chocolatey.win_chocolatey:
         name: chocolatey -y
         state: present
       ignore_errors: yes
 #   INSTALL FIREFOX
     - name: install_firefox
-      win_chocolatey:
+      chocolatey.chocolatey.win_chocolatey:
         name: firefox -y
         state: present
